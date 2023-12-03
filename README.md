@@ -6,12 +6,12 @@ This project is to implement consent management in all HTML forms by simply addi
 
 $("#testform").consentize(
 {
-policyPageUrl:'<Your domain name>/<privacy-policy-page-uri>', //without https:// or http://
-termsPageUrl:'<Your domain name>/<terms-page-uri>', //without https:// or http://
-apiKey:'<Your API Key>',
-nameFieldName:"<Name of the form field that collects name of the user>",
-emailFieldName:"<Name of the form field that collects email address of the user>",
-consentType:"<Type of user that you define in your console>"
+policyPageUrl:'[Your domain name]/[privacy-policy-page-uri]', //without https:// or http://
+termsPageUrl:'[Your domain name]/[terms-page-uri]', //without https:// or http://
+apiKey:'[Your API Key]',
+nameFieldName:"[Name of the form field that collects name of the user]",
+emailFieldName:"[Name of the form field that collects email address of the user]",
+consentType:"[Type of consent that you define in your console ex. End User, Customer, Admin User etc]"
 }
 );
 
