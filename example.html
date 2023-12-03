@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./concentize.js"></script>
+<script>
+
+$(function(){
+$("#testform").consentize(
+{
+policyPageUrl:'orgevents.in/privacy-policy', //without https:// or http://
+termsPageUrl:'orgevents.in/terms-policy', //without https:// or http://
+apiKey:'d2c5f907-18d6-c494-ee95-14f4d6f18cf7',
+nameFieldName:"name",
+emailFieldName:"email",
+consentType:"End User" //"Admin User" / "End User" / "Service Provider"
+}
+);
+})
+
+
+</script>
+<body>
+<form id="testform" action="javascript:formSubmitted()">
+<input type="text" name="name" required=""><br>
+<input type="text" name="email" required=""><br>
+<input type="submit">
+</form>
+</body>
+
+</html>
