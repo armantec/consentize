@@ -1,6 +1,6 @@
-# consentize
+# Consentize
 
-With the newly passed DPDP Act, 2023 in India it is now mandatory to take consent of all users who submit their personal data on a website or an application.
+With the newly passed DPDP Act, 2023 in India, it is now mandatory to take consent of all users who submit their personal data on a website or an application.
 
 This project is to implement consent management in all HTML forms by simply adding including concentize.js in your page and invoking below given script after the form is loaded on the page.
 
