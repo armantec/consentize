@@ -4,7 +4,6 @@ With the newly passed DPDP Act, 2023 in India it is now mandatory to take consen
 
 This project is to implement consent management in all HTML forms by simply adding including concentize.js in your page and invoking below given script after the form is loaded on the page.
 
-$(function(){
 $("#testform").consentize(
 {
 policyPageUrl:'<Your domain name>/<privacy-policy-page-uri>', //without https:// or http://
@@ -15,5 +14,6 @@ emailFieldName:"<Name of the form field that collects email address of the user>
 consentType:"<Type of user that you define in your console>"
 }
 );
-})
+
+See sample implementation in exmple.html
 
