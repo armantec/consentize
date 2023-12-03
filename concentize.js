@@ -1,6 +1,6 @@
 var openConsentForm = function(options, name, email){
 $(document.body).append("<div id='consentbackdrop' style='position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity:0.6' class='backdrop'></div>");
-var url = "https://consentize.in/your-consent";
+var url = "https://consentize.in/my-consent";
 url = url + "?p_p_id=com_armantec_consent_consent_form_portlet&_com_armantec_consent_consent_form_portlet_finderKey=readPolicies:readTerms:apiKey:name:emailAddress:consentType&_com_armantec_consent_consent_form_portlet_finderId=" + encodeURIComponent(options.policyPageUrl) + ":" + encodeURIComponent(options.termsPageUrl) + ":" + options.apiKey + ":" + name + ":" + email + ":" + options.consentType;
 $(document.body).append("<iframe id='consentwindow' style='width:calc(100% - 200px);height:700px;left:100px;top:10px;position:fixed;border:1px solid #ddd;' src='" + url + "'></iframe>");
 }
