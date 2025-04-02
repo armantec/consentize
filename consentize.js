@@ -10,9 +10,9 @@ $(function(){
 
 $.fn.consentize = function(options){
    $(this).options = options;
-   $("<br/><input style='float:left' id='termscheck' value='' onclick='return false;' name='consentid' type='radio' required/> <label for='termscheck' style='cursor: pointer;float: left;margin-left: 10px;margin-top: -3px;'>Your Consent for the Compliance of Digital Personal Data Protection Act (DPDP)</label><br/><br/>").insertBefore($(this).find("button[type=reset]"));
+   $("<br/><input style='float:left' id='termscheck' value='' onclick='return false;' name='consentid' type='radio' required/> <label for='termscheck' style='cursor: pointer;float: left;margin-left: 10px;margin-top: -3px;'>Your Consent</label><br/><br/>").insertBefore($(this).find("input[type=submit]"));
    $('#termscheck').click(function(){
-   	  openConsentForm(options, this.form.elements[options.nameFieldName].value, this.form.elements[options.emailFieldName].value);
+   	  openConsentForm(options);
    })
 };
 
